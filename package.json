@@ -1,5 +1,5 @@
 {
-  "homepage": "https://olcayprojects.github.io/mealdb",
+  "homepage": "https://olcayprojects.github.io/mealdb/",
   "name": "mealdb",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "15.1.3",

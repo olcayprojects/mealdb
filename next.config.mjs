@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
+    output: "export",
     images :{
-        domains:["www.themealdb.com"]
+        unoptimized: true,
+
+       // domains:["www.themealdb.com"]
     },
-    assetPrefix: isProd ? '/nextmeal/' : '',
-    basePath: isProd ? '/nextmeal' : '',
-    output: 'export'
+    basePath: isProd ? '/mealdb' : '',
 };
 
 export default nextConfig;
