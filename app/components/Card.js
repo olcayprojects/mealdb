@@ -4,7 +4,7 @@ import React from "react";
 
 function Card({ recipe }) {
   return (
-    <Link href={`/recipes/${recipe?.idMeal}`}>
+    <Link href={``}>
       <div className="border-2 border-gray-300 hover:border-black">
         <Image
           src={recipe?.strMealThumb}
