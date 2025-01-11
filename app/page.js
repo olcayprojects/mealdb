@@ -21,6 +21,7 @@ export default function Home() {
         }
         const result = await res.json();
         setRecipes(result?.meals);
+        console.log(recipes);
 
         const data = await response.json();
       } catch (error) {
