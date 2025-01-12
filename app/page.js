@@ -21,7 +21,6 @@ export default function Home() {
         }
         const result = await res.json();
         setRecipes(result?.meals);
-        console.log(recipes);
 
         const data = await response.json();
       } catch (error) {
@@ -45,7 +44,7 @@ export default function Home() {
         ) : (
           <>
             <div className="flex flex-wrap flex-col lg:flex-row items-center gap-2">
-              {recipes.map((recipe) => (
+              {recipes?.map((recipe) => (
                 <Card key={recipe?.idMeal} recipe={recipe} />
               ))}
             </div>

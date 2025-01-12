@@ -6,7 +6,7 @@ const nextConfig = {
         
         // domains:["www.themealdb.com"]
     },
-    basePath: '/mealdb',
+    //basePath: '/mealdb',
     output: "export",
     reactStrictMode: true,
 };
